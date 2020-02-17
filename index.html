@@ -67,7 +67,59 @@
     #thirdMainDiv #video{
     height: 315px;
     width: 515px;
-    
+    }
+    #fourthMainDiv{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px 0px 0px;
+    justify-content: center;
+    align-items: center;
+    }
+    #fourthMainDiv h2{
+        background-color: #ddd;
+        margin: 0px 0px 0px 0px;
+        font-size: 25px;
+    }
+    #fourthMainDiv #xDiv{
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    margin: 10px 10px 10px 10px;
+    text-align: center;
+    }
+    #fourthMainDiv #yDiv{
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    margin: 10px 10px 10px 0px;
+    text-align: center;
+    }  
+    #fourthMainDiv #zDiv{
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    text-align: center;
+    }
+    #fourthMainDiv ul{
+        list-style-type: none;
+    }
+    #fourthMainDiv .btn{
+    height: 40px;
+    font-size: 1em;
+    background-color: #f1c40f;
+    margin: 0px 0px 10px 0px;
+    cursor: pointer;
+    width: 80px;
+    }
+    footer{
+        background-color: #ddd;
+    }
+    #aaa li{
+    list-style-type: none;   
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: disc;
+    flex-direction: column-reverse;
     }
 </style>
 <body>
@@ -108,24 +160,47 @@
     <iframe id="video" height="315" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
 </div>
 <div id="fourthMainDiv">
-    <div id="x">
-    <h2></h2>
-    <h1></h1>
-    <p></p>
-    <button></button>
+    <div id="xDiv">
+    <h2>TENOR TROMBONE</h2>
+    <h1>$600</h1>
+    <ul>
+    <li>Lorem ipsum.</li>
+    <li>Lorem ipsum.</li>
+    <li>Lorem ipsum dolor.</li>
+    <li>Lorem ipsum.</li>
+    </ul>
+    <button class="btn">Select</button>
     </div>
-    <div id="y">
-    <h2></h2>
-    <h1></h1>
-    <p></p>
-    <button></button>
+    <div id="yDiv">
+    <h2>BASS TROMBONE</h2>
+    <h1>$900</h1>
+    <ul>
+    <li>Lorem ipsum.</li>
+    <li>Lorem ipsum.</li>
+    <li>Lorem ipsum dolor.</li>
+    <li>Lorem ipsum.</li>
+    </ul>
+    <button class="btn">Select</button>
     </div>
-    <div id="z">
-    <h2></h2>
-    <h1></h1>
-    <p></p>
-    <button></button>
+    <div id="zDiv">
+    <h2>VALVE TROMBONE</h2>
+    <h1>$1200</h1>
+    <ul>
+    <li>Plays similar to a Trumpet</li>
+    <li>Great for Jazz Bands</li>
+    <li>Lorem ipsum dolor.</li>
+    <li>Lorem ipsum.</li>
+    </ul>
+    <button class="btn">Select</button>
     </div>
 </div>
+<footer id="aaa">
+    <ul>
+    <li>Privacy</li>
+    <li>Terms</li>
+    <li>Contact</li>
+    </ul>
+<span>Copyright 2016, Original Trombones</span>    
+</footer>
 </body>
 </html>
