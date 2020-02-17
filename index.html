@@ -1,31 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Product Page</title>
 </head>
 <style>
-    #fsd{
-    -webkit-font-smoothing: antialiased;
-    text-rendering: auto;
-    box-sizing: border-box;
-    font: normal normal normal 14px/1 FontAwesome;
+    body{
+        background:#eee;
     }
-
+    #mainDiv{
+    text-align: center;
+    }
+    #mainDiv h1 {
+    font-size: 2rem;
+    font-weight: lighter;
+    }
+    #mainDiv input[type="email"] {
+    height: 20px;
+    width: 290px;
+    }
+    #mainDiv button {
+    font-family: black;
+    background-color: #f1c40f;
+    border: none;
+    margin: 25px 10px 10px 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    width: 170px;
+    height: 35px;
+    }
+    #SecondMainDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px 10px 10px;
+    }
+    #aDiv,#bDiv,#cDiv {
+    display: flex;
+    text-align: left;
+    } 
+    #aDiv{
+    margin: 80px 10px 10px 10px;
+    }
+    #aaDiv,#baDiv,#caDiv {
+    margin: 30px 60px 50px 180px;
+    color: darkorange;
+    text-align: left;
+    }
+    #abDiv p,#bbDiv p,#cbDiv p{
+    font-size: 18px;
+    font-weight: 20px;
+    }
+    #abDiv h1,#bbDiv h1,#cbDiv h1{
+    font-size: 30px;
+    font-weight: normal;
+    }
+    #thirdMainDiv{
+    text-align: center;
+    margin: 50px 0px 0px 0px;
+    }
+    #thirdMainDiv #video{
+    height: 315px;
+    width: 515px;
+    
+    }
 </style>
 <body>
-    <div id="mainDiv">
-    <h1>Handcrafted, home-made masterpieces</h1> 
-    <input type="email" id="email" placeholder="Enter Your Email address"><br>
-    <button  id="submit" type="submit" value="Get Started" class="btn">Get Strarted</button>    
+<div id="mainDiv">
+        <h1>Handcrafted, home-made masterpieces</h1>
+        <input type="email" id="email" placeholder="Enter Your Email address"/><br/>
+        <button type="submit">Get Strarted</button>
     </div>
-    <div id="seMainDiv">
-    <div id="aDiv">
-    <i id="fsd" class="fa fa-3x fa-fire">
-        ::before
-    </i>
+    <div id="secondMainDiv">
+        <div id="aDiv">
+        <div id="aaDiv">
+        <i class="fa fa-3x fa-fire"></i>
+        </div>
+        <div id="abDiv">
+        <h1>Premium Materials</h1>
+        <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+        </div>
+    </div>
+    <div id="bDiv">
+        <div id="baDiv">
+        <i class="fa fa-3x fa-truck"></i>
+        </div>
+        <div id="bbDiv">
+        <h1>Fast Shipping</h1>
+        <p> We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
     </div>
     </div>
+        <div id="cDiv">
+        <div id="caDiv">
+        <i class="fa fa-3x fa-battery-full"></i>
+        </div>
+        <div id="cbDiv">
+        <h1>Quality Assurance</h1>
+        <p> For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>  
+    </div>
+</div>
+<div id="thirdMainDiv">
+    <iframe id="video" height="315" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+</div>
+<div id="fourthMainDiv">
+    <div id="x">
+    <h2></h2>
+    <h1></h1>
+    <p></p>
+    <button></button>
+    </div>
+    <div id="y">
+    <h2></h2>
+    <h1></h1>
+    <p></p>
+    <button></button>
+    </div>
+    <div id="z">
+    <h2></h2>
+    <h1></h1>
+    <p></p>
+    <button></button>
+    </div>
+</div>
 </body>
 </html>
