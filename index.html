@@ -48,7 +48,7 @@
     margin: 80px 10px 10px 10px;
     }
     #aaDiv,#baDiv,#caDiv {
-    margin: 30px 60px 50px 180px;
+    margin: 30px 60px 50px 350px;
     color: darkorange;
     text-align: left;
     }
@@ -75,33 +75,20 @@
     justify-content: center;
     align-items: center;
     }
+    #fourthMainDiv ul{
+        list-style-type: none;
+    }
     #fourthMainDiv h2{
         background-color: #ddd;
         margin: 0px 0px 0px 0px;
         font-size: 25px;
     }
-    #fourthMainDiv #xDiv{
+    #fourthMainDiv #xDiv ,#yDiv ,#zDiv{
     border-color: black;
     border-width: 3px;
     border-style: solid;
     margin: 10px 10px 10px 10px;
     text-align: center;
-    }
-    #fourthMainDiv #yDiv{
-    border-color: black;
-    border-width: 3px;
-    border-style: solid;
-    margin: 10px 10px 10px 0px;
-    text-align: center;
-    }  
-    #fourthMainDiv #zDiv{
-    border-color: black;
-    border-width: 3px;
-    border-style: solid;
-    text-align: center;
-    }
-    #fourthMainDiv ul{
-        list-style-type: none;
     }
     #fourthMainDiv .btn{
     height: 40px;
@@ -111,15 +98,17 @@
     cursor: pointer;
     width: 80px;
     }
-    footer{
-        background-color: #ddd;
+    #abc{
+    background-color: #ddd;
+    text-align: right;
+    margin: 40px 150px 0px 150px;
+    padding: 10px 0px 0px 0px;
     }
-    #aaa li{
-    list-style-type: none;   
-    display: flex;
-    justify-content: flex-end;
-    list-style-type: disc;
-    flex-direction: column-reverse;
+    #abc li{
+    display: inline;
+    list-style-type: none;
+    margin: 10px ;
+    font-size: 20px;
     }
 </style>
 <body>
@@ -194,13 +183,13 @@
     <button class="btn">Select</button>
     </div>
 </div>
-<footer id="aaa">
+<div id="abc">
     <ul>
     <li>Privacy</li>
     <li>Terms</li>
     <li>Contact</li>
     </ul>
 <span>Copyright 2016, Original Trombones</span>    
-</footer>
+</div>
 </body>
 </html>
