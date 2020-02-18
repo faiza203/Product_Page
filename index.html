@@ -11,7 +11,25 @@
 </head>
 <style>
     body{
-        background:#eee;
+    background:#eee;
+    }
+    #fai{
+    display: flex;
+    flex-direction: row;
+    background-color:#eee ;
+    }
+    #fai #header-img{
+    height: 60px;
+    }
+    #fai ul{
+    display: flex;
+    flex-direction: row;
+    }
+    #fai li{
+    list-style-type: none;
+    font-size: 30px;
+    text-align: right;
+    padding: 10px 10px 10px 10px;
     }
     #mainDiv{
     text-align: center;
@@ -56,9 +74,8 @@
     font-size: 18px;
     font-weight: 20px;
     }
-    #abDiv h1,#bbDiv h1,#cbDiv h1{
+    #abDiv h3,#bbDiv h3,#cbDiv h3{
     font-size: 30px;
-    font-weight: normal;
     }
     #thirdMainDiv{
     text-align: center;
@@ -71,24 +88,29 @@
     #fourthMainDiv{
     display: flex;
     flex-direction: row;
-    margin: 10px 0px 0px 0px;
+    margin: 10px 10px 10px 0px;
     justify-content: center;
     align-items: center;
     }
     #fourthMainDiv ul{
-        list-style-type: none;
+    list-style-type: none;
+    margin: 3em auto;
     }
     #fourthMainDiv h2{
-        background-color: #ddd;
-        margin: 0px 0px 0px 0px;
-        font-size: 25px;
+    background-color: #ddd;
+    margin: 0px 0px 0px 0px;
+    font-size: 25px;
+    padding: 10px 10px 10px 10px;
+    width: 95%;
     }
     #fourthMainDiv #xDiv ,#yDiv ,#zDiv{
     border-color: black;
-    border-width: 3px;
+    border-width: 1px;
     border-style: solid;
     margin: 10px 10px 10px 10px;
     text-align: center;
+    height: 22em;
+    width: 22em;
     }
     #fourthMainDiv .btn{
     height: 40px;
@@ -96,7 +118,8 @@
     background-color: #f1c40f;
     margin: 0px 0px 10px 0px;
     cursor: pointer;
-    width: 80px;
+    width: 140px;
+    border: none;
     }
     #abc{
     background-color: #ddd;
@@ -112,37 +135,46 @@
     }
 </style>
 <body>
+<div id="fai">
+    <img id="header-img" src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" alt="original trombones logo">
+    <ul id="ham">
+    <li><a class="nav-link" >Features</a></li>
+    <li><a class="nav-link" >How It Works</a></li>
+    <li><a class="nav-link" >Pricing</a></li>
+    </ul>
+</div>
 <div id="mainDiv">
         <h1>Handcrafted, home-made masterpieces</h1>
         <input type="email" id="email" placeholder="Enter Your Email address"/><br/>
         <button type="submit">Get Strarted</button>
-    </div>
-    <div id="secondMainDiv">
-        <div id="aDiv">
+</div>
+<div id="secondMainDiv">
+    <div id="aDiv">
         <div id="aaDiv">
-        <i class="fa fa-3x fa-fire"></i>
+            <i class="fa fa-3x fa-fire"></i>
         </div>
         <div id="abDiv">
-        <h1>Premium Materials</h1>
-        <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+            <h3>Premium Materials</h3>
+            <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
         </div>
     </div>
     <div id="bDiv">
         <div id="baDiv">
-        <i class="fa fa-3x fa-truck"></i>
+            <i class="fa fa-3x fa-truck"></i>
         </div>
         <div id="bbDiv">
-        <h1>Fast Shipping</h1>
+        <h3>Fast Shipping</h3>
         <p> We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+        </div>
     </div>
-    </div>
-        <div id="cDiv">
+    <div id="cDiv">
         <div id="caDiv">
-        <i class="fa fa-3x fa-battery-full"></i>
+            <i class="fa fa-3x fa-battery-full"></i>
         </div>
         <div id="cbDiv">
-        <h1>Quality Assurance</h1>
-        <p> For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>  
+            <h3>Quality Assurance</h3>
+            <p> For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>  
+        </div>
     </div>
 </div>
 <div id="thirdMainDiv">
@@ -150,37 +182,37 @@
 </div>
 <div id="fourthMainDiv">
     <div id="xDiv">
-    <h2>TENOR TROMBONE</h2>
-    <h1>$600</h1>
-    <ul>
-    <li>Lorem ipsum.</li>
-    <li>Lorem ipsum.</li>
-    <li>Lorem ipsum dolor.</li>
-    <li>Lorem ipsum.</li>
-    </ul>
-    <button class="btn">Select</button>
+        <h2>TENOR TROMBONE</h2>
+        <h1>$600</h1>
+        <ul>
+        <li>Lorem ipsum.</li>
+        <li>Lorem ipsum.</li>
+        <li>Lorem ipsum dolor.</li>
+        <li>Lorem ipsum.</li>
+        </ul>
+        <button class="btn">Select</button>
     </div>
     <div id="yDiv">
-    <h2>BASS TROMBONE</h2>
-    <h1>$900</h1>
-    <ul>
-    <li>Lorem ipsum.</li>
-    <li>Lorem ipsum.</li>
-    <li>Lorem ipsum dolor.</li>
-    <li>Lorem ipsum.</li>
-    </ul>
-    <button class="btn">Select</button>
+        <h2>BASS TROMBONE</h2>
+        <h1>$900</h1>
+        <ul>
+        <li>Lorem ipsum.</li>
+        <li>Lorem ipsum.</li>
+        <li>Lorem ipsum dolor.</li>
+        <li>Lorem ipsum.</li>
+        </ul>
+        <button class="btn">Select</button>
     </div>
     <div id="zDiv">
-    <h2>VALVE TROMBONE</h2>
-    <h1>$1200</h1>
-    <ul>
-    <li>Plays similar to a Trumpet</li>
-    <li>Great for Jazz Bands</li>
-    <li>Lorem ipsum dolor.</li>
-    <li>Lorem ipsum.</li>
-    </ul>
-    <button class="btn">Select</button>
+        <h2>VALVE TROMBONE</h2>
+        <h1>$1200</h1>
+        <ul>
+        <li>Plays similar to a Trumpet</li>
+        <li>Great for Jazz Bands</li>
+        <li>Lorem ipsum dolor.</li>
+        <li>Lorem ipsum.</li>
+        </ul>
+        <button class="btn">Select</button>
     </div>
 </div>
 <div id="abc">
@@ -189,7 +221,7 @@
     <li>Terms</li>
     <li>Contact</li>
     </ul>
-<span>Copyright 2016, Original Trombones</span>    
+    <span>Copyright 2016, Original Trombones</span>    
 </div>
 </body>
 </html>
