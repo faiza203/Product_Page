@@ -1,0 +1,8 @@
+<a class="nav-link" >Features</a>
+<a class="nav-link" >How It Works</a>
+<a class="nav-link" >Pricing</a>
+
+
+    #fai li :link{
+    text-decoration: none;
+    }
